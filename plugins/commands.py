@@ -18,7 +18,8 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('🤖 𝕸𝖔𝖛𝖎𝖊 𝕮𝖍𝖆𝖓𝖓𝖊𝖑', url='https://t.me/Tamilrockersvpn1'),
+                InlineKeyboardButton('ɢ-ᴅʀɪᴠᴇ ᴍᴏᴠɪᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Tamilblasters_win')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -37,10 +38,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('தமிழ்', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('🔍 தேடு', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('எங்கள் சேனல்', url='https://t.me/tamilrockersvpn1'),
+            InlineKeyboardButton('எங்கள் G-Drive சேனல்', url='https://t.me/tamilblasters_win')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -78,10 +80,11 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('தமிழ்', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('🔍 தேடு', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('எங்கள் சேனல்', url='https://t.me/tamilrockersvpn1'),
+            InlineKeyboardButton('எங்கள் G-Drive சேனல்', url='https://t.me/tamilblasters_win')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
