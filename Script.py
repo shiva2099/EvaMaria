@@ -21,13 +21,10 @@ class script(object):
 சாகாமலே நாம் வாழலாம்"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Eva Maria Supports both url and alert inline buttons.
-
-<b>NOTE:</b>
-1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Eva Maria supports buttons with any telegram media type.
-3. Buttons should be properly parsed as markdown format
-
+- போராடினால் நாம் வெல்லலாம்
+வான் வீதியில் கால் வைக்கலாம்
+பூலோகமே தேன் சொல்லலாம்
+சாகாமலே நாம் வாழலாம்
 <b>URL buttons:</b>
 <code>[Button Text](buttonurl:https://t.me/trvpn)</code>
 
