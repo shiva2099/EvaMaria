@@ -25,7 +25,14 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 SPELL_CHECK = {}
-
+file_names = file.file_name
+a = "www TamilBlasters link"
+if file_names is not None:
+            file_names = file_names.strip()
+            if a:
+             for i in a.split(','):
+              if i in file_names:
+               file_names = file_names.replace(i,'')
 @Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client,message):
     group_id = message.chat.id
@@ -98,7 +105,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}] {file_names}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -107,7 +114,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"{file_names}", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
