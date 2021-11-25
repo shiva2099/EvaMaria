@@ -26,7 +26,7 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 SPELL_CHECK = {}
 file_names = file.file_name
-a = "www.tamilblasters.link"
+a = "www TamilBlasters link"
 if file_names is not None:
             file_names = file_names.strip()
             if a:
